@@ -8,7 +8,7 @@ impl StringFixed {
             self.data[index] = 0;
         }
     }
-    pub fn from(&mut self, string: &str) {
+    pub fn from_string(&mut self, string: &str) {
         let string_array_byte = string.as_bytes();
         for index in 0..self.data.len() {
             if index < string_array_byte.len() {
